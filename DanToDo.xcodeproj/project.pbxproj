@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1CC8879F93038DC850346115 /* Pods_DanToDo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B9AD04DC0DB5D86F6DC5771 /* Pods_DanToDo.framework */; };
 		303BFC0121CD744E00DEDC90 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303BFC0021CD744E00DEDC90 /* CategoryViewController.swift */; };
 		3067912E21CAB2D1004962C7 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3067912C21CAB2D1004962C7 /* DataModel.xcdatamodeld */; };
 		3076202821C8040300C6DD1F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3076202721C8040300C6DD1F /* AppDelegate.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1B9AD04DC0DB5D86F6DC5771 /* Pods_DanToDo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DanToDo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		303BFC0021CD744E00DEDC90 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 		3067912D21CAB2D1004962C7 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
 		3076202421C8040300C6DD1F /* DanToDo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DanToDo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -26,6 +28,8 @@
 		3076202E21C8040500C6DD1F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3076203121C8040500C6DD1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3076203321C8040500C6DD1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		672A04B69A19E79185DF6023 /* Pods-DanToDo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DanToDo.release.xcconfig"; path = "Pods/Target Support Files/Pods-DanToDo/Pods-DanToDo.release.xcconfig"; sourceTree = "<group>"; };
+		B07788A15C3F8BCB4D953B40 /* Pods-DanToDo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DanToDo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DanToDo/Pods-DanToDo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CC8879F93038DC850346115 /* Pods_DanToDo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +83,8 @@
 			children = (
 				3076202621C8040300C6DD1F /* DanToDo */,
 				3076202521C8040300C6DD1F /* Products */,
+				89A79C1C6F2FB78E0D795D98 /* Pods */,
+				3199E50FC8D2A820FAF53E8F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,6 +109,23 @@
 			path = DanToDo;
 			sourceTree = "<group>";
 		};
+		3199E50FC8D2A820FAF53E8F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1B9AD04DC0DB5D86F6DC5771 /* Pods_DanToDo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		89A79C1C6F2FB78E0D795D98 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B07788A15C3F8BCB4D953B40 /* Pods-DanToDo.debug.xcconfig */,
+				672A04B69A19E79185DF6023 /* Pods-DanToDo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -109,9 +133,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3076203621C8040500C6DD1F /* Build configuration list for PBXNativeTarget "DanToDo" */;
 			buildPhases = (
+				675B7B330E6E8B231AC6B659 /* [CP] Check Pods Manifest.lock */,
 				3076202021C8040300C6DD1F /* Sources */,
 				3076202121C8040300C6DD1F /* Frameworks */,
 				3076202221C8040300C6DD1F /* Resources */,
+				8BE58DA4D6A180191F8A262B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -167,6 +193,55 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		675B7B330E6E8B231AC6B659 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DanToDo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8BE58DA4D6A180191F8A262B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-DanToDo/Pods-DanToDo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DanToDo/Pods-DanToDo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3076202021C8040300C6DD1F /* Sources */ = {
@@ -320,6 +395,7 @@
 		};
 		3076203721C8040500C6DD1F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B07788A15C3F8BCB4D953B40 /* Pods-DanToDo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -338,6 +414,7 @@
 		};
 		3076203821C8040500C6DD1F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 672A04B69A19E79185DF6023 /* Pods-DanToDo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
